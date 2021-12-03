@@ -1,0 +1,111 @@
+<!-- The "<style>" Tag
+  This tag is used inside the "<head>" tag for styling specfic HTML elements.
+  We can style a specific HTML element by using the element's name, and between curly braces we add the CSS property and its value.
+  When using CSS this way it is possible to style multiple elements at once.
+-->
+
+<!-- Order of precendence
+  Inline CSS -> Internal CSS -> External CSS
+-->
+
+<!-- Default CSS
+  It is important to know that the browser applies a CSS style by default.
+  These values are: https://www.w3schools.com/cssref/css_default_values.asp
+  For the "<hr>" tag, we have as default:
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  OBS: It is also important to keep in mind that basically all the elements in the webpage are just boxes. The "pesticide" Chrome extension can be used for displaying those boxes.
+-->
+
+<!-- The "height" property
+  This property is used for altering the height of HTML elements.
+  Pretty much any element can use this property.
+  The same works for the "<width>" property.
+  Instead of using a fixed value we can use a porcentage that varies according to the user's screen. VERY IMPORTANT.
+  OBS: If an element has no height, its backgound color will be redundant. Example in the "hr" element being edited in the "<style>" tag.
+-->
+
+<!-- Possible improvement
+  From past experiences, when working with elements that we can edit multiple properties, for example "border-style", since there are four borders, it's better to alter all of
+  them in a single property rather than making properties depend on each other inside a code-block. So, instead of using "border-style", to set all the other borders to a
+  particular value, and then set the "border-top-style" to a value (creating a dependency between properties), we should just define the "border-style" and alter all the values.
+-->
+
+<!-- Disadvantage of internal CSS
+  Internal CSS is a little bit better than inline CSS since we can attribute a style to multiple HTML elements in a page, however is NOT the recommended version.
+  According to this scenario, if we have multiple HTML pages we would have to copy the internal CSS to each one of the other pages.
+  For that reason external CSS is the best to use (best practise).
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mateus' Personal Site</title>
+
+  <style>
+    body {
+      background-color: powderblue;
+    }
+
+    hr {
+      width: 10%;
+      border-color: grey;
+      border-width: 10px;
+      border-style: dotted none none none;
+    }
+  </style>
+</head>
+
+<body>
+  <table cellspacing="20">
+    <tr>
+      <td><img src="images/img.jpg" alt="mateus profile picture" /></td>
+      <td>
+        <h1>Mateus Henrique</h1>
+        <p><em>A University student striving towards a <strong><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science Major.</a></strong></em></p>
+        <p>I am striving to be a Full Stack programmer. I love learning new things and diversifying my knowledge.</p>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li>Technical course of System Development at <a href="http://portal.mec.gov.br/pronatec">PRONATEC.</a></li>
+    <li>Studying Computer Science at <a href="https://www.ufv.br/">Federal University of Viçosa.</a></li>
+  </ul>
+  <hr>
+  <h3>Study Experience</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Study</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018-2020</td>
+        <td>Highschool at FUNEC</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>Computer Science at UFV</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <a href="contact-me.html">Contact me</a>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!-- CSS
+  CSS stands for "Cascading Style Sheet", which is used to style HTML elements, it can be used inline or through an external file.
+  Using though an external file is recommended, meaning that it's considered as the best practise.
+-->
+
+<!-- The "style" Attribute
+  This attribute is used to introduce CSS code into HTML elements, this way we can sytle elements inline.
+  Notice that CSS code follows a different pattern from HTML code, in other words we need to use ":" and put a semi colon at the end of the statement.
+-->
+
+<!-- The "background-color" Property
+  This is a CSS propery that's used for changing an HTML element's color. We can use a color name or an hexadecimal as value.
+  To figure out which color names that we can use it's necessary to look at the documentation ("https://developer.mozilla.org/en-US/docs/Web/CSS/color_value").
+  The site that was suggested for picking colors was "colorhunt.co".
+  Because of the "pigment" package we have a preview of the color.
+-->
+
+<!-- The disadvantage of using inline CSS
+  The main disadvantage when using CSS in this way is that if we want to style multiple elements that use the same tag we have to edit one by one.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mateus' Personal Site</title>
+</head>
+
+<body style="background-color: powderblue;">
+  <table cellspacing="20">
+    <tr>
+      <td><img src="images/img.jpg" alt="mateus profile picture" /></td>
+      <td>
+        <h1>Mateus Henrique</h1>
+        <p><em>A University student striving towards a <strong><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science Major.</a></strong></em></p>
+        <p>I am striving to be a Full Stack programmer. I love learning new things and diversifying my knowledge.</p>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li>Technical course of System Development at <a href="http://portal.mec.gov.br/pronatec">PRONATEC.</a></li>
+    <li>Studying Computer Science at <a href="https://www.ufv.br/">Federal University of Viçosa.</a></li>
+  </ul>
+  <h3>Study Experience</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Study</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018-2020</td>
+        <td>Highschool at FUNEC</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>Computer Science at UFV</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <a href="contact-me.html">Contact me</a>
+</body>
+
+</html>
