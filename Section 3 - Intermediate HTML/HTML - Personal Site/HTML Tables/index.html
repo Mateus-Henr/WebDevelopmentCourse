@@ -1,0 +1,64 @@
+<!-- The "<table>" Tag
+  This tag is used to strucure data.
+  Inside of a table it's possible to create "Table Rows" ("<tr>"), which is used to structure data in a row or "Table Data" ("<td>"), which works as a cell.
+  The biggest hurdle that we have to overcome when working with tables is that there are no table columns, when writing code we go from top to bottom to represent columns.
+-->
+
+<!-- Other Table Elements
+  Just as with HTML code, tables can have header ("<thead>"), body ("<tbody>") and footer ("<tfoot>").
+  In the table head is where we create titles for the table. To do that we use header elements ("<th>") for the table.
+  We structure a table like this, normally to isolate parts for styling or for setting different functions. Could be considered as a best practice.
+-->
+
+<!-- Table Element Attributes
+  The majority of the attributes for the table element are deprecated, in other words, they are downgraded. This because HTML is for structuring.
+  Due to that fact, it's best practise to keep the styling code separated from the structural code. The same rule applies when using JavaScript that's used actions.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mateus' Personal Site</title>
+</head>
+
+<body>
+  <img src="images/img.jpg" alt="mateus profile picture" />
+  <h1>Mateus Henrique</h1>
+  <p><em>A University student striving towards a <strong><a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science Major.</a></strong></em></p>
+  <p>I am striving to be a Full Stack programmer. I ❤️ learning new things and diversifying my knowledge.</p>
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li>Technical course of System Development at <a href="http://portal.mec.gov.br/pronatec">PRONATEC.</a></li>
+    <li>Studying Computer Science at <a href="https://www.ufv.br/">Federal University of Viçosa.</a></li>
+  </ul>
+  <h3>Study Experience</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Study</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018-2020</td>
+        <td>Highschool at FUNEC</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>Computer Science at UFV</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <a href="contact-me.html">Contact me</a>
+</body>
+
+</html>

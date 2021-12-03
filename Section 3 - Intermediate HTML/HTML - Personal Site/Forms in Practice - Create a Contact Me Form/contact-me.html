@@ -1,0 +1,57 @@
+<!-- The "<textarea>" Tag
+  As its name implies it's a text area that can be customize. We have the "rows" attributes that sets the height of the area and the "cols" that sets the width of it.
+  By default, it's editable, however we are the ones that define its initial size through the attributes spoken above.
+-->
+
+<!-- Clicking the "submit" Button
+  In the "<form>" element we have an attribute called "action". This attribute is used to determine what action should be taken in case of pressing the "submit" button.
+  When we use its default implementation from the auto generate package, it goes to the index page.
+  It's also important to notice that because we are using an input that's of type "email", it does some basic validation when we click on the "submit" button.
+-->
+
+<!-- The "mailto:" Value
+  When using this value in the "action" attribute, when the user presses the "submit" button, it'll open up your default email client with the email that you have passed to it.
+-->
+
+<!-- The value for the "method" attribute
+  Because we are using "post" as a value for the attribute, it will get the data that the user has entered and it will transfer it to the email's fields.
+  However it will use the email app installed on your computer.
+-->
+
+<!-- Redirecting to gmail
+  It's also possible to configure your default gmail, but as the user probrably won't have it configured, there's isn't a point in showing it.
+-->
+
+<!-- The "<enctype>" attribute
+  Used to change the type of encoding of the "post" operation.
+-->
+
+<!-- Defining names for the attributes
+  It's important to define the HTML element with a name in the "name" attribute for identification. It's considered a best practise.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Contact Me</h1>
+  <p><strong>Email: </strong>mateush.study@gmail.com</p>
+  <p><strong>Phone: </strong>My Phone</p>
+  <hr>
+  <form action="mailto:info@londonappbrewery" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label>YourEmail:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea>
+    <input type="submit" name="">
+  </form>
+</body>
+
+</html>
