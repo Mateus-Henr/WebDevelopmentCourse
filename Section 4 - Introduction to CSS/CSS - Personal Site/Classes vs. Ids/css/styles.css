@@ -1,0 +1,58 @@
+/* ID selector
+  This type of selector is similar to the class selector, however
+  To target an ID as a selector we have to use "#" before the name of the ID, it's worth mentioning that we can also choose the ID name.
+  Differently from classes, when using ids we can only have one, meaning that the must be unique.
+  So it's used to identify elements where there's only a single one of them on a page. For example a navegation bar.
+  We use classes when we want to set similar behaviours or styles among elements, we kinda group them.
+  However ids for styling are very rarely used.
+*/
+
+/* Order of precedence
+  There is also an order of precedence among ids, classes, and tag selectors. It's as followed:
+  ID Selectors -> Class Selectors -> Tag Selectors
+/*
+
+/* Sudo classes
+  Some CSS keywords have ":" before it, and they are called sudo classes.
+  HTML elements can have different states and these keywords are used for it. For example, by hovering over an HTML element we have a different state.
+  Since HTML elements have different states we can alter the styling based on the current state of the element.
+*/
+
+/***************************** TAG SELECTORS *****************************/
+
+h1
+{
+  color: red;
+  font-size: 200px;
+}
+
+img:hover
+{
+  background-color: gold;
+}
+
+
+/***************************** CLASS SELECTORS *****************************/
+
+.bacon
+{
+  background-color: green;
+}
+
+.broccoli
+{
+  background-color: red;
+}
+
+.circular
+{
+  border-radius: 100%;
+}
+
+
+/******************************* ID SELECTORS *****************************/
+
+#heading
+{
+  color: blue;
+}

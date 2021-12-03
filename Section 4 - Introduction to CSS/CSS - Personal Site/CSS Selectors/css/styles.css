@@ -1,0 +1,36 @@
+/* By targeting a selector, every HTML element that have the same tag will be altered. */
+
+/* Classes
+  They are used to create groups or to specify even more which elements the CSS code will be applied on.
+  We have the freedom of choosing their names.
+  To target a class we use "." + the chosen name.
+*/
+
+/* It might be good to separate the CSS code into sections */
+
+/***************************** TAG SELECTORS *****************************/
+
+h1
+{
+  color: red;
+  font-size: 200px;
+}
+
+/*
+img
+{
+  background-color: red;
+}
+*/
+
+/***************************** CLASS SELECTORS *****************************/
+
+.bacon
+{
+  background-color: green;
+}
+
+.broccoli
+{
+  background-color: red;
+}
