@@ -1,0 +1,16 @@
+/* When the value is zero we don't have to specify the unit. */
+body
+{
+  margin: 0;
+}
+
+div
+{
+  background-color: #E4F9F5
+}
+
+/* It's good to specify just the properties that you want to alter being as more specific as you can. */
+h1
+{
+  margin-top: 0;
+}
