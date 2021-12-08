@@ -1,0 +1,47 @@
+/* CSS "display" property
+  This property can be set to the following values:
+    Block - They take up the whole width of the screen on a webpage, blocking out any elements from sitting next to it.
+          Exs: Paragraphs (<p>), headers (<h?>), divisions (<div>), lists and list items (<ol>, <ul>, and <li>) and forms (<form>).
+    Inline - It just takes up the necessary space that it needs to. Therefore other elements can be displayed on the same line.
+             However for inline elments is not possible to change the width.
+          Exs: Spans (<span>) and anchors (<a>).
+    Inline-Block - This element is similar to the above, so it takes up the necessary space that it needs to and let content be displayed on the same line.
+                   But it has the advantage that you can change the width of the elements using this dusplay value.
+          Exs: images (<img>).
+    None - This property value gets rid of the element where it is being applied on. Normally, it's used for hiding things on a webpage.
+*/
+
+/* Hiding elements on a webpage
+  For hiding elements on a webpage you can either use "display" property with the value of "none" or use the "visibility" property with a value of "hidden".
+  They are different since the "visibility" property keeps the element space as if it's still there, but the "display" property set as "none" completely
+  hides the element as if it never existed.
+*/
+
+body
+{
+  margin: 0;
+}
+
+h1
+{
+  margin-top: 0;
+}
+
+.top-container
+{
+  background-color: #E4F9F5;
+}
+
+.middle-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.bottom-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}

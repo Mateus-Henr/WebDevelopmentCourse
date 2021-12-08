@@ -1,0 +1,66 @@
+/* The Box Model
+  This model is based on the principle of a box that occupies a space on the website and the other "boxes" will be pushed to make space for the box that has been sized.
+  By using the "border", "padding", "height", "width" and "margin" property it won't make elements encroach on each other.
+*/
+
+/* Viewport
+  This is the screen where you're viewing your website on. For example a laptop screen, a PC screen, etc.
+*/
+
+/* The "border" property
+  You can use this property for displaying a border around your element, it's worth mentioning that this border doesn't encroach on the size of the element.
+  Therefore by having a size for the border the size of the element will be wider.
+*/
+
+/* Multiple values in one property
+  When defining multiple values in one property, for example when using "border-width" and you want to define a size for each border we can view the order of the values as a
+  circle, being ordered as top, right, bottom, left, in other words, clockwise.
+*/
+
+/* The "padding" property
+  This is used when you want to have a space from where the border starts.
+  The "padding" differs from "border" since it expands the HTML element from inside (increases the size of the box), but the "border" expands the element from the outside.
+*/
+
+/* The "margin" property
+  This property is a buffer zone between your element and another that is on the screen.
+  It doesn't expand the element internally or externally, it just sets some space between a specific HTML element or HTML elements surrounded by it.
+*/
+
+body
+{
+  margin: 0;
+}
+
+h1
+{
+  margin-top: 0;
+}
+
+.top-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: #E4F9F5;
+  border: solid 10px;
+  padding: 20px;
+}
+
+.middle-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border: solid 20px;
+  border-color: black;
+  margin-left: 260px;
+}
+
+.bottom-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  border: solid 10px;
+  margin-left: 500px;
+}
