@@ -1,0 +1,60 @@
+/* CSS Positioning
+  There are some values for the "position" property, being them:
+    Static - This is the default positioning, it goes along with the HTML rules, as shown below;
+    Relative - This allows us to change the element positioning based on the defualt positioning. From there we can use properties like "left" and "right" to move it to the
+               desired position. In other words, we can modify its positioning starting with the positioning defined by the "static" value.
+               The coordinate properties are: "top" (moves below), "bottom" (moves up), "left" and "right". And they can be altered by assigning values into them.
+               It's worth mentioning that this value by itself does nothing, the coordinate properties must be altered for it to start doing something.
+               OBS: When you move elements that have a relative position, it doesn't affect the position of other elements, so the element that you moving towards will
+                    be encroached by the element being moved. Other very important point to remember is that the element sort of keeps its initial positioning and elements
+                    with a static positioning won't enter the initial space where the element was.
+    Absolute -
+    Fixed -
+*/
+
+/* Rules
+  EVERY HTML ELEMENT HAS A PREDEFINED CSS, IN OTHER WORDS, DEFAULT CSS VALUES FOR EACH ONE OF THEM.
+  1 - Content is everything, the height is always defined by the content by default, it doesn't matter if the position is inline or block.
+      The difference among these two positions that I have just mentioned is that inline will have its width defined by the element, but for block elements their width
+      is the entire page.
+  2 - Order comes from the code, the order of the elements are defined by the order of the HTML elements.
+  3 - Children Sit On Parents , if you put elements inside others, like inside a "<div>" for example, it will be displayed on the top of the div.
+      The "z axis" can be used to change what's going to display on top or on behind.
+*/
+
+/* By using "inline-block" there's a little bit of space that is added in. */
+
+body
+{
+  margin: 0;
+}
+
+.red
+{
+  background-color: red;
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  left: 200px;
+  width: 100px;
+}
+
+.blue
+{
+  background-color: blue;
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  right: 100px;
+  width: 100px;
+}
+
+.yellow
+{
+  background-color: yellow;
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  right: 100px;
+  width: 100px;
+}
