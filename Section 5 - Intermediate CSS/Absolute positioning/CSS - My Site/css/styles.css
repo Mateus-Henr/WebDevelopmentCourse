@@ -1,0 +1,53 @@
+/* Absolute Positioning
+  When using it we are positioning the element relative to its PARENT, in other words, its coordinates properties will be based on the PARENT.
+  When using relative positioning it means that you are adding a margin to where the element should have been.
+  However with absolute positioning it means that you are adding a margin relative to the element's parent.
+  Absolute positioning will also take the element out of the flow of the document, in other words it's as if you had deleted the element.
+  It's used when you want to move position an element without changing the flow of others.
+*/
+
+/* Fixed positioning
+  By using this type of positioning the element will be always on the same spot, even if the user scrolls down the webpage.
+  It can be used with navbars for example, since it will follow the user throughout the website.
+*/
+
+body
+{
+  margin: 0;
+}
+
+.container
+{
+  background-color: grey;
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+.red
+{
+  background-color: red;
+  height: 100px;
+  left: 200px;
+  position: absolute;
+  width: 100px;
+}
+
+.blue
+{
+  background-color: blue;
+  height: 100px;
+  left: 100px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+.yellow
+{
+  background-color: yellow;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100px;
+}
