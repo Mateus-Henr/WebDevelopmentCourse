@@ -1,0 +1,69 @@
+/* The "text-align" property (center everything inside)
+  This property has to be set in the parent component in order to work. As its name says it lets the user customize the alignment of the text.
+  It works if we have inline elements or "block" elements (the ones that consume the full width of the page).
+  Also it's important to remember that it aligns based on the PARENT element.
+*/
+
+/* Other way of centering an element with CSS (center everything outside)
+  By using the "margin" property with the "auto" value, which when applied will center the element either vertically or horizontally.
+  Therefore for centering an element horizontally we would use the "left" and "right" margins with the value of "auto". The other way araound if we wanted to align it vertically.
+  This property would be used in the element itself since we want to alter its margin.
+*/
+
+/* OBS: In order to position an absolute element in relation to a parent, this parent needs to have a relative position. */
+
+body
+{
+  margin: 0;
+  text-align: center;
+}
+
+h1
+{
+  margin-top: 0;
+}
+
+.top-container
+{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.bottom-container
+{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}
+
+.pro
+{
+  text-decoration: underline;
+}
+
+.title
+{
+  padding: 30px
+}
+
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud
+{
+  bottom: 300px;
+  position: absolute;
+  left: 300px;
+}
