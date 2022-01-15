@@ -9,19 +9,36 @@
 
   It's possible to define two fonts, but this depends on the browser. Below what we are doing is: Asking the browser if it can render the "verdana" font, if so, it'll render
   the "verdana" otherwise it'll try to render the other font that in our case is "sans-serif".
-  That's why there are the "web safe fonts" which are fonts that most operation systems/browsers can display.
+  That's why there are the "web safe fonts" which are fonts that most operation systems/browsers can display. However, no font is a hundred percent "web safe".
+  There's something called "fall back" that's when multiple fonts are defined in order to get a compatibility in one. The names of the fonts are placed one after the other and
+  the first font that the user has on hist/her PC will be used for rendering test. This is used as some sort of insurance going from a specific font to a less specific one.
+  Already made font stacks can be found at "www.cssfontstack.com".
+
+  Font embedding
+  Through this, we can embed a font to our website, making sure that that same font is going to be displayed for all the users that are accessing the website.
+  The best place for looking for this type of fonts is "www.fonts.google.com". They have fonts that are free for comercial use.
+  To embed a font to a website all that's necessary is to cpy the "<link>" provided by the font's site and paste it in the HTML head tag.
+  These links specify a location to get the font from in case of the user not having it in his/her system.
+  Even though defining a font like this is more "secure", there's still the possibility of the font not being rendered, let's suppose that the internet went down, that's why
+  is important to define a "fall back" font in case of a situation like this arises.
 */
 
 body
 {
   margin: 0;
   text-align: center;
-  font-family: verdana, sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 
 h1
 {
   margin-top: 0;
+  font-family: 'Sacramento', cursive;
+}
+
+h2, h3
+{
+  font-size: 'Montserrat', sans-serif;
 }
 
 .top-container
