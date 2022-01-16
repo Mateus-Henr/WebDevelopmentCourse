@@ -1,0 +1,114 @@
+/* Changing width
+  Remember what's inside an element centers based on its parent, so by changing the width of a parent element we will be forcing elements what are inside the parent
+  to be re-centered according to the new size.
+
+  Floating
+  The "float" property comes handy when we want to wrap things around each other. By defining a position we can have elements that occupy the same line for example.
+  This property SHOULD ONLY BE used when EXTREMELY necessary for wrapping text around another element. This is very troublesome.
+  For positioning we should always use "position", "margin", "padding", etc properties.
+
+  The "clear" property
+  This property is used for cleaning the "float" property of an element. This can be targeted to a specific element that you don't want to using the "float" value.
+  In other words, it applies the default behaviour when there was no "float" value, it avoids wrapping an element around another.
+*/
+
+body
+{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+}
+
+h1
+{
+  color: #66BFBF;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+}
+
+h2
+{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3
+{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a
+{
+  color: #11999E;
+}
+
+.top-container
+{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.skill-row
+{
+  line-height: 2;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 50%;
+}
+
+.pro
+{
+  text-decoration: underline;
+}
+
+.title
+{
+  padding: 30px
+}
+
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud
+{
+  bottom: 300px;
+  position: absolute;
+  left: 300px;
+}
+
+/* As the parent of these images have a 50% of width, both of these images will occupy 1/4 of the total space that is 50% of the entire page. */
+.c-logo
+{
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.java-logo
+{
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*
+.c-skill-description
+{
+  clear: left;
+}
+
+.java-skill-description
+{
+  clear: right;
+}
+*/
