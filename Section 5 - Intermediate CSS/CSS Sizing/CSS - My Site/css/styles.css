@@ -1,0 +1,93 @@
+/* Dynamic font size
+  "font-size" property
+  Used for altering the size of the font. When setting the value of it using pixels the font will be static it won't change according to the font size that the user
+  has as default on his/her browser.
+  It's quite important to make your website accessible to the majority of people possible, that's why it's always recommendable to go for dynamic values.
+  However, when the person zooms in it doesn't matter the unit for the font since the zoom scales the website up.
+
+  Percentage
+  To make it more dynamic we can use percentage.
+  A "100%" in font size is equal to 16px.
+  In order to find the most adequate font size, there's a little calculus that you can do in which the proportion is shown above.
+
+  Unit of mesure "em"
+  A "1em" in font size is equal to 16x. So, just like with percentage we can do a little calculus to discover what size fits better for you.
+
+  Dependency
+  Dynamic font size is useful, however it must be used carefully. This is because it inherits the previous size of the font, so if you have two font sizes in two different
+  elements where one element is enclosed by the other, the font size of the inner element will be based on the font size of the outter element, therefore, the font size of the
+  outter element adds up to the one in the inner element.
+  But from CSS 3, we have the "rem" (root em) that basically tells the browser to ignore all the parent sizes. This way we remove this "coupling" between elements. It doesn't
+  get affected by upstream size changes.
+
+  GOOD PRACTISE
+  ALWAYS USE "rem" for font sizes. For the rest of the properties such as margins, paddings, etc is better to keep with "px".
+
+  16px = 100% = 1em = 1rem
+*/
+
+body
+{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+}
+
+h1
+{
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+}
+
+h2
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+h3
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-container
+{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.c-logo
+{
+  height: 150px;
+}
+
+.java-logo
+{
+  height: 200px;
+}
+
+.pro
+{
+  text-decoration: underline;
+}
+
+.title
+{
+  padding: 30px
+}
+
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud
+{
+  bottom: 300px;
+  position: absolute;
+  left: 300px;
+}
