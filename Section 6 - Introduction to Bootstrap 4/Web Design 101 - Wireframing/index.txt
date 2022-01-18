@@ -1,0 +1,20 @@
+Wireframing
+This is a low fidelity representation of the design for a website. One of the first thing that you do when designing a website.
+The opposite of it, it's called a mock up. A mock up is a high fidelity representation of a website, in other words, the end result, just through designing.
+A mock up is preferable if you have already the idea of how the website is going to be, so other person can develop it for example. However, as it's a high fidelity
+representation it can consume a lot of time in futile details such as colours and shapes.
+
+Structure and UI patterns - 1° step
+In order to decide which structure and UI patterns fit the better for your website, you should start by looking at sites such as "ui-patterns.com", "dribbble.com", always trying
+to correlate the problems that you are trying to solve.
+
+Wireframing - 2° step
+This is when you develop a general layout in order to get some feedback from it. "balsamiq.com" is a good website for building it.
+
+Mock-up - 3° step (optional)
+A more precise design of the website, photo realistic versions of that's going to be developed. It also gets feedbacks.
+
+Prototype - 4° step  (optional)
+An animated version of the website, which shows exactly how it's going to be and how it's going to perform under user's interactions.
+
+An simple wireframe created by me can be found in the same folder as this file.
