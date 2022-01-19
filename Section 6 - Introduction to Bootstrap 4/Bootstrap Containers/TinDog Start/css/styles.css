@@ -1,0 +1,18 @@
+#title
+{
+  background-color: #FF4C68;
+}
+
+h1
+{
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+/* Even though Bootstrap has some pre-added style to the following class we can modify it even more. */
+.container-fluid
+{
+  padding: 3% 15%;
+}
