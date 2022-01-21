@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Media Query Breakpoints</title>
+  <style media="screen">
+    h1 {
+      font-size: 30px;
+    }
+
+    /* If the website is 900px or less, execute the code within the curly braces. */
+    @media (min-width: 900px) and (max-width: 1000px) {
+      h1 {
+        color: red;
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+
+<!-- Website in mobiles
+    Among the multiple ways that Google search uses to rank a website, the mobile-friendliness of a website is one of them.
+    Google even offers a "mobile-friendly test" in which you can enter a URL to see whether a website is accessible for mobiles.
+    Some companies have a different website for mobile devices, such as Facebook (the URL changes to match a mobile device).
+    However, the best solution is to make your website responsive, rather than creating an entire new project for devices.
+    And in cases that the Bootstrap reponsiveness doesn't apply, we have the media query breakpoints that can be used in plain CSS.
+--->
+
+<!-- Media queries
+  The "@media print" query is used for modifying thwe CSS code for when the user's printing the website.
+  The "@media screen" is related to the screen resolution.
+  The "@media speech" gets activated if the website is being read.
+
+  Structure
+  @media <type> <feature>
+  OBS: "feature" is the condition in which it gets activated.
+
+  Example
+  @media screen (min-width: 900px)
+  {
+    // Change something.
+  }
+
+  Media query breakpoints
+  They could be considered as "conditions" since they analyse a state and if that state meets the conditon, the code
+  being enclosed by the media query gets enacted.
+  It's also possible to combine multiple "types" by using the word "and" between them.
+
+  Confusing "types"
+  "min-width" means that we are targetting from that value upwards.
+  "max-width" means that we are targetting from that value downwards.
+
+  Terms
+  Viewport is the size of the screen that a website is being displayed on.
+  Device width is a fixed size, the actual size of a device.
+  Browser size is changeable since the user has the ability of modifying its window.
+
+  Designing a website
+  There are debates, which either choose to start styling a website for mobile or desktop first,
+  but it's better to do it both ways.
+-->
+
+<body>
+  <h1>Hello World</h1>
+</body>
+
+</html>
