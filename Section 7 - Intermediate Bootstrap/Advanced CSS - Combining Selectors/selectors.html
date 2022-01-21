@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Combining Selectors</title>
+  <style>
+    /* Single Selector (just a selector) */
+    .container-fluid {
+      background-color: pink;
+    }
+
+    /* Hierarchical Selector (parent and child relashionship) */
+    .container .title {
+      background-color: red;
+    }
+
+    /* Combined selectors (same HTML element) */
+    h1.title {
+      font-weight: bold;
+    }
+
+    /* Multiple Selectors (more than one selector) */
+    .container,
+    .container-fluid {
+      border: 1px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Hello World!</h1>
+  </div>
+  <div class="container-fluid">
+    <h1 class="title">Good Bye World!</h1>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+/*  Combined selectors
+
+  Structure
+  selector1#selector2
+  {
+    Properties...
+  }
+
+  Example
+  h1#title
+  {
+    Properties...
+  }
+  Can be read as: "The h1 that has an ID of title must receive these customized properties."
+  Differently from the hierarchical selector, this one is actually read from left to right.
+
+  This is used to correlate a HTML element to a class or ID that the same element owns.
+*/
+
+body
+{
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+/* This is a use of multiple selectors */
+h1, h2, h3, h4, h5, h6
+{
+  font-weight: bold; /* Substitute for "font-family: 'Montserrat-Bold';". */
+}
+
+p
+{
+  color: #8F8F8F;
+}
+
+.container-fluid
+{
+  padding: 7% 15%;
+}
+
+.big-heading
+{
+  color: #FFF;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.section-heading /* Since this is a more general selector, it has been defined here. */
+{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* Navigation Bar */
+
+.navbar
+{
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand
+{
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item
+{
+  padding: 0 18px;
+}
+
+.nav-link
+{
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+/* Title Section */
+
+#title
+{
+  background-color: #FF4C68;
+  color: #FFF;
+  text-align: left;
+}
+
+/* Hierarchical Selectors
+    First selector is the parent and the next is the child.
+    This type of selector actually reads from the right to the left and searches for a specific child that's inside a parent.
+    It can find multiple occurrences.
+*/
+#title .container-fluid
+{
+  padding: 3% 15% 7%; /* Overrides the previous rule */
+}
+
+/* Title Image */
+
+.title-image
+{
+  transform: rotate(25deg);
+  position: absolute; /* Taking image out of the flow to overlap it. */
+  right: 30%;
+  width: 19rem;
+}
+
+
+/* Download Buttons */
+
+.download-button
+{
+  margin: 5% 3% 5% 0;
+}
+
+
+/* Features Section */
+
+#features
+{
+  background-color: #FFF;
+  position: relative; /* It must have a position in order to overlap the image that have a z-index */
+}
+
+.feature-box
+{
+  padding: 4.5%;
+}
+
+.feature-title
+{
+  font-size: 1.5rem;
+}
+
+.feature-icon
+{
+  color: #EF8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icon:hover
+{
+  color: #FF4C68;
+}
+
+
+/* Testimonials Section */
+
+#testimonials
+{
+  background-color: #EF8172;
+  color: #FFF;
+}
+
+.testimonial-text
+{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image
+{
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+/* Press Section */
+
+#press
+{
+  background-color: #EF8172;
+  padding-bottom: 3%;
+}
+
+.press-logo
+{
+  margin: 20px 20px 50px 50px;
+  width: 15%;
+}
+
+
+/* Pricing Section */
+
+#pricing
+{
+  padding: 100px;
+}
+
+.pricing-column
+{
+  padding: 3% 2%;
+}
+
+.price-text
+{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/* Call To Action (CTA) Section */
+
+#cta
+{
+  background-color: #FF4C68;
+}
+
+/* Footer */
+
+#footer
+{
+  background-color: #FFF;
+}
+
+.footer-icon
+{
+  margin: 20px 10px;
+}
+
+
+/* Code for adding responsiveness from medium devices. */
+@media (max-width: 1028px)
+{
+  #title
+  {
+    text-align: center; /* We can't delete this one because it's a different use case. */
+  }
+
+  .title-image
+  {
+    position: static; /* Back into the flow */
+    transform: rotate(0);
+  }
+}
