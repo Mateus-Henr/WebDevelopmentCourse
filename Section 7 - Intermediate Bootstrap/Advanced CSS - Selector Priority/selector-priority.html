@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Selector Priority</title>
+  <style>
+    h1 {
+      /* When trying to edit the same property twice, the CSS rule change that will be the final value */
+      color: green;
+      color: red;
+    }
+
+    /* Classes have higher precedence over HTML elements. By logic it makes sense. */
+    .title {
+      color: yellow;
+    }
+
+    /* An ID has an even higher precedence over classes and HTML elements. By logic it also makes sense since an ID is unique. */
+    #heading {
+      color: blue;
+    }
+
+    /* Some GOOD PRACTISES */
+
+    /* It's also important to remember the priorities depending on where the CSS code is, internal < internal < external. */
+
+    /* Preventing from creating conflicting rules
+      In order to avoid the type of situation where you have code overriding each other because of the order of precedence, the
+      best way to avoid it is to use ID only in rare occasions (very sparingly), don't try to use it when you can use a class.
+      Even if we have only one element it's better to use a class.
+      ID is normally used for sections (due to navigation), and bootstrap elements when in the need of it.
+    */
+
+    /*  Use only one class
+      Another good practise is to not use multiple little classes to modify an element.
+      Trying to apply a single custom class is the best way.
+    */
+
+    /*  Inline styles
+      ********NEVER USE********
+    */
+  </style>
+</head>
+
+<body>
+  <h1 id="heading" class="title" style="color: orange">Hello World</h1>
+</body>
+
+</html>
