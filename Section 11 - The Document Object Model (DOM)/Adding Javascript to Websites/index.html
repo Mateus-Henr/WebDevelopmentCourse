@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Normally, CSS external locations must be placed inside of the "head" tag, once this tag is initialized first, before the pages loads up. Therefore, by doing it,
+    you guarantee that the files will be ready when the body needs to get something from them.
+    However with JS it's a different story. Due to the fact that when using JS we only have to modify specific stuff at specific times, it's important to notice that the best
+    way to handle actions like this is choosing the "perfect" place for the JS code.
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- JS works simirlaly to CSS, we can have inline JS, internal JS, or external JS. -->
+</head>
+
+<!-- The "onload" below is an JS attribute that when carries out code when the HTML element loads up. Using single quotes here to avoid misinterpretation. --->
+<!-- It's important to remember the semicolon. EXAMPLE OF INLINE JS. OBS: YOU SHOULD NEVER USE IT. -->
+
+<body onload="alert('Hello');">
+  <h1>Hello</h1>
+
+  <!-- EXAMPLE OF INTERNAL JS. -->
+  <script type="text/javascript">
+    alert("Hello");
+  </script>
+
+  <!-- EXAMPLE OF EXTERNAL JS. HOWEVER, the position where the JS tag is placed at matters a huge bit. This will change the content of the h1.
+    Another interesting point to know is that, if we had use this same line of code within the "head" tag we would have got an error. This happens because at that specific time
+    (when the "head" tag loads up) there's no h1 property yet.
+  -->
+  <script src="index.js" charset="utf-8">
+  </script>
+
+  <!-- Even though, this link still works here, it should never be used here. This will only load the CSS file after the body is already loaded up.
+    <link rel="stylesheet" href="styles.css">
+  -->
+
+  <!-- BEST PRACTISE
+    WHEN DEALING WITH JS SCRIPTS, THEY MUST ALWAYS COME RIGHT BEFORE THE CLOSING BODY TAG.
+    Since in order to manipulate HTML, JS has to have the HTML code already loaded up, JS code must come at the end of the file. In addition to that, JS code is more time consuming
+    therefore, it should come last. So it doesn't affect the loading time of the website.
+  -->
+</body>
+
+</html>
