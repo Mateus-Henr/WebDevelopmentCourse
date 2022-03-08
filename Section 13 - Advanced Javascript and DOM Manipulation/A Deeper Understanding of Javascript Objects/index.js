@@ -50,17 +50,17 @@ var houseKeeper1 =
 
 
 // A "factory" that produces bell boys. This is called a contruction function. FIRST LETTER MUST BE CAPITALIZED. The same thing as a contructor in Java.
-function BellBoy(name, age, hasWorkPermit, languages)
+function BellBoy(name, age, hasWorkPermit, email)
 {
   this.name = name;
   this.age = age;
   this.hasWorkPermit = hasWorkPermit;
-  this.languages = languages; // We can use this in JS.
+  this.email = email;
 }
 
 
 // Creating an object from the factory (Initialising an object)
-var bellBoy2 = new BellBoy("Timmy", 19, true, ["French", "English"]);
+var bellBoy2 = new BellBoy("Timmy", 19, true, "timmy@gmail.com");
 
 console.log(bellBoy);
 
