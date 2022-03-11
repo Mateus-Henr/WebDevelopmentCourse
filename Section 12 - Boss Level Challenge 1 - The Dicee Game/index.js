@@ -4,7 +4,7 @@ const RANGE = 6;
 const DEFAULT_IMG_PATH = "images/dice";
 const DOT_PNG = ".png";
 const PLAYER1_WINS = "🚩 Player 1 wins!";
-const PLAYER2_WINS = "Player 1 wins! 🚩";
+const PLAYER2_WINS = "Player 2 wins! 🚩";
 const DRAW = "Draw!";
 
 // Throwing the dicee
