@@ -5,6 +5,7 @@ const MAX_LEVELS = 10;
 const NEXT_LEVEL_DELAY = 1000;
 const CLICK_DELAY = 100;
 const SOUNDS_FOLDER = "sounds/";
+const DOT_MP3 = ".mp3";
 
 var values =
 {
@@ -17,9 +18,9 @@ var values =
 var sequence = [];
 var userInputs = [];
 var gameOn = false;
-var userTime = false;
+var userInteration = false;
 
-
+// Start game
 $(document).keypress(() =>
 {
   if (!gameOn)
@@ -30,12 +31,13 @@ $(document).keypress(() =>
 });
 
 
+// Adding event handler to the buttons
 $(".btn").click(handleClick);
 
 
 function handleClick(e)
 {
-  if (!gameOn || !userTime)
+  if (!gameOn || !userInteration)
   {
     return;
   }
@@ -51,16 +53,13 @@ function handleClick(e)
     }
   }
 
-  console.log(userInputs);
-  console.log(sequence);
-
   let currElement = userInputs.length - ONE;
   let userInputSize = userInputs.length;
   let sequenceSize = sequence.length;
 
   if (userInputs[currElement] === sequence[currElement])
   {
-    new Audio(SOUNDS_FOLDER + e.target.id + ".mp3").play();
+    new Audio(SOUNDS_FOLDER + e.target.id + DOT_MP3).play();
 
     if (userInputSize === sequenceSize)
     {
@@ -69,7 +68,7 @@ function handleClick(e)
   }
   else
   {
-    new Audio(SOUNDS_FOLDER + "wrong.mp3").play();
+    new Audio(SOUNDS_FOLDER + "wrong" + DOT_MP3).play();
     gameOver();
   }
 }
@@ -77,12 +76,11 @@ function handleClick(e)
 
 function nextLevel(levelNumber)
 {
-  userTime = false;
+  userInteration = false;
 
   $("#level-title").text("Level " + levelNumber);
 
-  cleanVariables();
-  console.log("Clean");
+  clearArrays();
 
   for (let i = ZERO; i < levelNumber; i++)
   {
@@ -90,13 +88,13 @@ function nextLevel(levelNumber)
   }
 
   setTimeout(() => displaySequence(), NEXT_LEVEL_DELAY);
-  setTimeout(() => userTime = true, levelNumber * NEXT_LEVEL_DELAY);
+  setTimeout(() => userInteration = true, (levelNumber * NEXT_LEVEL_DELAY) + CLICK_DELAY);
 }
 
 
 function getNumber()
 {
-  return Math.floor((Math.random() * MAX_OPTIONS));
+  return Math.floor(Math.random() * MAX_OPTIONS);
 }
 
 
@@ -107,16 +105,16 @@ function displaySequence()
     setTimeout(() =>
     {
       pressButtonAnimation(values[sequence[i]]);
-      new Audio(SOUNDS_FOLDER + values[sequence[i]] + ".mp3").play();
+      new Audio(SOUNDS_FOLDER + values[sequence[i]] + DOT_MP3).play();
     }, i * NEXT_LEVEL_DELAY);
   }
 }
 
 
-function pressButtonAnimation(id)
+function pressButtonAnimation(idString)
 {
-  $("#" + id).addClass("pressed");
-  setTimeout(() => $("#" + id).removeClass("pressed"), CLICK_DELAY);
+  $("#" + idString).addClass("pressed");
+  setTimeout(() => $("#" + idString).removeClass("pressed"), CLICK_DELAY);
 }
 
 
@@ -127,12 +125,12 @@ function gameOver()
   $("body").addClass("game-over");
   setTimeout(() => $("body").removeClass("game-over"), NEXT_LEVEL_DELAY);
 
-  cleanVariables();
+  clearArrays();
   gameOn = false;
 }
 
 
-function cleanVariables()
+function clearArrays()
 {
   sequence = [];
   userInputs = [];
