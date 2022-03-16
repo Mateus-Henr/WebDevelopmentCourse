@@ -1,0 +1,12 @@
+Command Line Commands
+ls (list) - It lists all the items in a specific directory. Ex: "ls".
+cd (change directory) - It allows you to move directories by specifying the directory's name. Ex: "cd Documents/Learn".
+cd ~ - To get back to the root directory.
+cd .. - It moves you to the previous directory in the directories path.
+
+Tips
+- By pressing "TAB" when mentioning folders in commands, the command line might complete the name of the folder, if there's only one version of it.
+- You can press the up and down arrows in order to go through previous commands.
+- To move the cursor to a specific part of a command you can hold the "Alt" button as you click on the part of the command that you want to move the cursor to.
+- To go to the beginning of a command you can press "Ctrl + A".
+- By pressing "Ctrl + U" you can clear a command.

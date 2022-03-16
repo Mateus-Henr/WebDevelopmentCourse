@@ -1,0 +1,13 @@
+The Bash Shell
+According to always hungry Angela, we can view the both the shell and the kernel as a pistachio. The "nut" of the pistachio is the kernel (the core of the OS),
+and the "shell" of the pistachio is the shell (user interface for interacting with the kernel).
+
+Types of Shell
+Graphic User Interface - The file explorer is an example.
+Command Line Interface - When you type commands to the kernel.
+
+Bash Shell
+It stands for "Bourne Again Shell". This is a command line interpreter for the UNIX system, being one example of it, Linux.
+
+Why To Use the Command Line
+Flexibility, quickness and more control.
