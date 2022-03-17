@@ -1,0 +1,38 @@
+Creating a new folder
+mkdir name_of_the_folder
+Ex: "mkdir Mateus".
+
+Going into the directory
+Ex: "cd Mateus".
+
+Making a file
+touch name_of_the_file
+Ex: "touch myfile.txt".
+
+Opening a file - Uses the default app.
+open name_of_the_file
+Ex: "open myfile.text".
+
+Opening a file with a specific app
+open -a start name_of_the_app name_of_the_file
+Ex: "open start atom myfile.txt".
+
+Discovering which directory you are in
+pwd
+Ex: "pwd".
+
+Deleting a file
+rm name_of_the_file
+Ex: "rm myfile.txt".
+
+Deleting all the files inside of a folder
+rm wildcard (Using the "*" wildcard to match everything)
+Ex: "rm *".
+
+Removing a directory
+rm -r name_of_the_directory (This "-r" flag allows us to remove a directory)
+Ex: "rm -r temp".
+
+
+OBS: BE EXTREMELY CAREFUL WITH COMMANDS.
+     When using "-f" (force), it doesn't ask for confirmation.
