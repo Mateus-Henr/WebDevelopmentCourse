@@ -57,4 +57,4 @@ dkms.conf
 **/out/**
 **/target/**
 **/cmake-build-debug/**
-**/node_moduels/**
+**/node_modules/**
