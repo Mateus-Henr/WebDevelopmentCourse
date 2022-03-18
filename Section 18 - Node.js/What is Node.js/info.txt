@@ -1,0 +1,2 @@
+By using Node.js we can have more interaction with the user since we don't depend too much on the browser to do specific stuff.
+Node.js allows us to interact directly with the hardware of the computer. Also, it allows us to implement a contact between the user and the server.
