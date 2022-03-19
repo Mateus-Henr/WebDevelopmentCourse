@@ -6,6 +6,8 @@ This project prints a random name of a superhero and a supervillain when execute
 
 ```
 npm install superheroes
+```
+```
 npm install supervillains
 ```
 
@@ -21,4 +23,4 @@ PRs accepted.
 
 ## License
 
-MIT © 
+MIT ©

@@ -1,0 +1,1 @@
+Express has as objective to make you write less repetitive code (kind of similar to jQuery and JS), but with Node.js.
