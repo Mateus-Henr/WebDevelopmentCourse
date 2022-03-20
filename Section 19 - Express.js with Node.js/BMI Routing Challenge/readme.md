@@ -1,6 +1,6 @@
-# Server with Express.js
+# Calculator
 
-This project opens a server in the port 3000.
+A simple calculator.
 
 ## Install
 
