@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <!-- When using the "post" method it means that we are sending the data somewhere. And the place where the action is being sent to is the "action" attribute.
+       To send it to our server we can either use the "/" to indicate the home route, or you can just leave it out, since by default the route directory is going to be chosen.  -->
+  <form action="/" method="post">
+    <input type="text" name="num1" placeholder="First Number">
+    <input type="text" name="num2" placeholder="Second Number">
+    <button type="submit" name="submit">Calculate</button>
+  </form>
+</body>
+
+</html>
