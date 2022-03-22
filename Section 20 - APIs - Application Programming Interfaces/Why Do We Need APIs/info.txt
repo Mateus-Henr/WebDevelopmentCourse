@@ -1,0 +1,6 @@
+APIs (Application Programming Interfaces)
+APIs can be useful when you want a specific data like the weather forecast in an organized manner.
+There are APIs for the most several purposes. For example, Facebook has an API for other apps to get data from it.
+An API is a set of commands, functions, protocols and objects that programmers can use to create software or interact with an external system.
+It's like a contract between the data provider and the developers. And we cannot change the methods, protocols, without notifying the data provider.
+An example of an API used for software creation is jQuery.
