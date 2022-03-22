@@ -1,0 +1,4 @@
+JSON
+It stands for "JavaScript Object Notation" since it does follow a similar pattern as defining objects in JS.
+This format is used because it's in the middle of being able to be read by a human and of not taking much space in the machine.
+Apart from JSON, there are also other formats, such as XML, and HTML.
