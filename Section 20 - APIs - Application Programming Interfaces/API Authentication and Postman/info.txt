@@ -1,0 +1,14 @@
+API
+
+Authentication
+Every time that you make a request to the API the have to be able to identify who's sending the request.
+Depending on the API, mainly the biggest ones, they keep track of how many times you getting data, in order to charge you.
+Here is where the key comes in. A key ("appid") is a bunch of characters that are used when you want to authenticate yourself when making requests to the API.
+The order of the parameters in a API request doesn't matter.
+Ex: "https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=43243243252dsda5435".
+
+Challenge
+https://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&appid=817a05ae8ea9027c47a13185429a962e
+
+Postman
+It's used for testing APIs. It organizes things more since you can enter the parameters individually.
