@@ -1,0 +1,25 @@
+API
+
+Endpoints
+Every API that interacts with an external system will have an endpoint.
+An endpoint for a API is an URL which you can access the data.
+It's important to notice that every time you search an URL on the browser, behind the curtains, the browser will be doing a GET request to the website to get the data.
+Ex: "https://api.kanye.rest".
+
+Paths
+This is used to narrow down in a specific piece of data.
+For the most handy API, we need to specify a path which is an additional information that comes after the URL.
+Ex: "https://sv443.net/jokeapi/v2/joke/Programming". (The "Programming" part is the path, the rest is the endpoint for the API).
+
+Parameters
+This is also used to narrow down in a specific piece of data.
+This is usually used when they don't have a path ahead of time due to the high number of possibilities of search. So parameters are used for this purpose.
+An example of use of parameters is if we want to search for a specific thing in a API, so then we send a string in order to match with some specific data.
+They go at the end of the URL after a quotation mark. Following that, there's a key value pair.
+You can also specify more than one value to a key, you just have to separate them using a comma.
+Parameters are separated by a "&".
+Ex: "https://sv443.net/jokeapi/v2/joke/Programming?contains=debugging". ("contains=debugging" is a parameter which "contains" is the key, and "debugging" is the query).
+Ex: "https://sv443.net/jokeapi/v2/joke/Programming?contains=debugging&blacklistFlags=nsfw,religious".
+
+Challenge
+https://sv443.net/jokeapi/v2/joke/Programming?contains=arrays
