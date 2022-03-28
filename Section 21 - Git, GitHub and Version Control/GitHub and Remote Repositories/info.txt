@@ -1,0 +1,26 @@
+GitHub
+GitHub is used to create a remote repository that can be accessed in someone's computer if given permission.
+
+Pushing files to a repository on GitHub
+
+Creating a remote
+This is the first thing that you should do after creating a remote repository.
+We have to create a remote in order to tell our local repository that we have created a local repository, and that we want to transfer our commits over there.
+  git remote add origin <SSH_URL> ("origin" is the name of the remote chosen by convention)
+Ex:
+  git remote add origin git@github.com:Mateus-Henr/Story.git
+
+
+Sending files over to the remote repository
+  git push -u origin master
+This pushes your local repository to the remote repository. The "-u" links up both repositories. After that, we push it to the remote called "origin", and to the "master" branch
+in that remote. The "master" branch is the default one.
+
+
+Seeing your commit history
+If you go to "Insights", then "Network graph", on GitHub, you can have a look at your commits.
+
+
+Local repository
+Once we have a few commits in the local repository, the timeline of commits is called the "master branch" which is your main branch of save points.
+Our local repository is the ".git" folder. When we use "git push", we push all of the commits in the local repository to the remote one.
