@@ -1,0 +1,59 @@
+Git is used for version control.
+So then you can have save points of your code when developing it.
+
+
+Using Git
+
+Initialising Git
+  git init
+This will create a ".git" folder, that's going to be used to track your changes, to commit your changes, and to perform version control.
+
+
+Tracking the changes
+To start tracking your changes, we need to send this file to a staging area. This is a intermediate place that's used to decide which files you want to commit.
+
+
+Seeing what's inside the staging area
+  git status
+
+
+Adding files to the staging area
+  git add <filename>
+Ex:
+  git add . (the "." specifies the content of the current directory)
+
+
+Committing a file on the version control
+Once the file is in the staging area, we can commit it on the version control.
+  git commit -m ""
+  OBS: "-m" is used to adding a message, message which is very important to keep track of the changes made.
+Ex:
+  git commit -m "Complete Chapter 1"
+
+  BEST PRACTISE
+  Commit messages must be written in the present tense. It's like your submitting your changes now.
+
+
+Seeing the commits that have been made
+  git log
+Each commit will have information related to it, and it will also have a hash which uniquely identifies it.
+The commits are organized in a stack format.
+
+
+Checking the differences between the file on the local repository and the one locally
+  git diff <filename>
+Ex:
+  git diff chapter3.txt
+
+
+Reversing the changes that we made locally to the version on the local repository
+  git checkout <filename>
+Ex:
+  git checkout chapter3.txt
+
+
+Sum up
+Once you initialise Git, it tries to track the changes between the working directory and the local repository.
+When we use "git add" we add the file to the staging area. The staging area is where you select the files that you want to be tracked.
+Once we decide which files we want to track, we commit them to the local repository.
+If you want to restore to the version saved on the local repository, we can use "git checkout".
