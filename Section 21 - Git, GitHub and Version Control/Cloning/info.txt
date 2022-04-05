@@ -1,0 +1,5 @@
+Cloning
+The command "git clone" can be used to clone a repository from the remote repository into your working directory. The HTTP URL needs to be passed to the command as well.
+Once you clone a repository you can also look at their commit tree by using "git log".
+Ex:
+  "git clone https://github.com/someproject/ex.git"

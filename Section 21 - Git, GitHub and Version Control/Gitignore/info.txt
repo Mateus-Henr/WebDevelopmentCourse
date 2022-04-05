@@ -1,0 +1,23 @@
+".gitignore" file
+
+This is usually used when you don't want to commit a file/folder into your remote repository. Stuff that would be considered as secret as well, such as API keys, passwords, etc.
+Be aware that GitHub is an open platform, due to that it's really important to keep access tokens, passwords, etc, away from the remote repository.
+Gitignore has as purpose to ignore files specified within it, so they don't get uploaded on GitHub.
+For adding comments we can use the "#" sign.
+It's also possible to add wildcards.
+The GitHub team has a repository with templates for gitignore files which is quite handy.
+
+Ex:
+  #Files to be ignored
+  .DS_Store
+  secret.txt
+
+
+".DS_Store" file
+This is a file that arranges how your project is going to be shown.
+This file is usually not committed since its a personal choice of the arrangement of the files in your project.
+
+
+Deleting files and folders within the staging area
+  "git rm --cached -r ."
+OBS: The "-r" flag means to delete everything recursively.

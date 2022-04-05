@@ -1,0 +1,38 @@
+Branching and merging
+Branches are used to add commits separately from the main branch.
+We could say that these other branches are experimental branches, so through them you can commit new stuff that won't interfere with the main branch.
+If we want to transfer the content of another branch into the main branch we can merge them together. During the merging we check if there are any conflicts and etc.
+A branch should only be merged into the master branch once you tested it and you know that it won't break the project.
+So by changing branches we can have multiple versions of the same project. In other words, THE CONTENT OF THE WORKING DIRECTORY CHANGES UPON THE BRANCH THAT YOU'RE AT.
+You can either use this branch system on GitHub website or through the terminal.
+It's important to know that once you merge two branches, the one that was merged doesn't get deleted.
+
+
+Creating new branches
+  "git branch NAME_OF_THE_BRANCH"
+Ex:
+  "git branch alien-plot"
+
+
+Checking which branches we have
+  "git branch"
+OBS: The asterisk shows which branch you're currently at.
+
+
+Changing branches
+  "git checkout NAME_OF_THE_BRANCH"
+Ex:
+  "git checkout alien-plot"
+
+
+Merging changes to the main branch
+While in the master branch, we can use:
+  "git merge NAME_OF_THE_BRANCH"
+Ex:
+  "git merge alien-plot"
+Once the you type the command it'll open the editor, and to save and quit we use ":q!".
+
+
+Pull request
+This is used for comparing and making changes to the merging when on the GitHub website.
+Through the GitHub website we can create a pull request that you can compare the content of the data that between the two branches that you're merging.
