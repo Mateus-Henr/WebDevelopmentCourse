@@ -1,0 +1,16 @@
+Forking
+This is when you copy a remote repository into another remote owned by you.
+Once you fork a remote repository, you now own it. And that person is added as a member.
+
+Pull request
+This pull request is a way to make a "suggestion", being it the code that was written.
+This is necessary because the person making this "suggestion" doesn't have the rights to modify the repository, therefore he/she sends the code "asking" to look at his/her
+modifications. So then, who owns the repository can look at the code and maybe even, merge the new updates into the current project.
+It's called a pull request because the owner that decides whether the code will be incorporated into the project. Therefore, the owner would be "pulling" the changes over.
+If the changes are proved to be compatible and viable, then the owner could accept the pull request and merge the new code to the remote repository.
+Also, the change doesn't get reflected on the master branch, but in a separate branch.
+
+Forking and Pull Request
+As you might have noticed above, these two exist in order to interact with open source codes.
+And usually, the person forks a repository, so then he/she can make pull requests.
+After that, the person who owns the repository can see the pull request and choose if he/she wants to merge that request to the master branch.
