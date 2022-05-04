@@ -13,12 +13,11 @@ app.get("/", (req, res) =>
   // Weekend
   if (dayNumber === 6 || dayNumber === 7)
   {
-    res.write("<h1>Yay it's a weekend!</h1>");
+    res.sendFile(__dirname + "/weekend.html");
   }
   else
   {
-    res.write("<p>It is not the weekend.</p>");
-    res.write("<h1>Boo! I have it work!</h1>");
+    res.sendFile(__dirname + "/weekday.html");
   }
 
   // Notice that when the server sees the "send" method, it sees it as the final instruction.
@@ -28,7 +27,7 @@ app.get("/", (req, res) =>
   // We can also send a file using "sendFile()".
   // res.send();
   // We can create an HTML template that changes depending on the logic used.
-  res.sendFile(__dirname + "/index.html");
+  // res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(PORT, () =>
