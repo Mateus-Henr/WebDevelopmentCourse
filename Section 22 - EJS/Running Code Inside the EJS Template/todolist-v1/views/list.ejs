@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <!-- Using control flow in HTML code, the tag that allows us to perform some control flow
+       is called the "Scriplet" tag, as shown below.
+       These types of tags allow us to run basic JS code for rendering HTML.
+       It only allows you to use basic JS code because the most of the logic MUST BE IN THE SERVER. -->
+  <% if (kindOfDay === "Satuday" || kindOfDay === "Sunday") { %>
+  <h1 style="color:purple"><%=kindOfDay%> ToDo List</h1>
+  <% } else { %>
+  <h1 style="color:blue"><%=kindOfDay%> ToDo List</h1>
+  <% } %>
+  <p>Why are you not working!</p>
+</body>
+
+</html>
