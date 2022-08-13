@@ -68,16 +68,11 @@ app.post("/compose", (req, res) =>
 
 app.get("/posts/:postName", (req, res) =>
 {
-  postArray.forEach(e =>
+  const foundPosts = postArray.filter(e => _.lowerCase(e.title) === _.lowerCase(req.params.postName));
+
+  res.render("post",
   {
-    if (_.lowerCase(e.title) === _.lowerCase(req.params.postName))
-    {
-      res.render("post",
-      {
-        title: e.title,
-        content: e.content
-      });
-    }
+    posts: foundPosts
   });
 });
 
