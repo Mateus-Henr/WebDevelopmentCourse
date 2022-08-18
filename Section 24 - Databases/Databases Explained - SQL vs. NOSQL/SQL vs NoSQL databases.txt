@@ -1,0 +1,48 @@
+SQL (Structured Query Language) vs NoSQL
+
+SQL
+When talking about SQL, we have a table that must follow a specified structure, so let's say tht we have 3 columns with information
+on something, if a column is not properly filled, then tor represent "no data", we have the "Null" value.
+
+NoSQL (More flexible)
+When it comes to NoSQL, data is usually represented as JSON object, therefore, it is not structured in a "table" way, due to that
+you can specify a specific key-value pair only to one object, in other words, because of this non-structured data organization,
+you don't have to worry about how data is organized/structured.
+
+
+Relationships
+Dispute between Relational (SQL) and Non-relational (NoSQL) databases.
+
+SQL
+To avoid repetitive data, you would create tables to specific information. So fromt that relationships would be made in order to link up
+these data together.
+
+NoSQL
+Since it doesn't have tables to build relationships, you must rely on embedded objects which would work as a way to represent relationships.
+There's also the possibility of having multiple documents that would represent relationships just like a SQL database, but this is
+slower and not as efficient.
+
+
+Scalability
+This is one of the strogest suits of NoSQL databases. Scaling data in a SQL database is similar to scaling a building vertically 
+(everything is centered in a single computer), whereas a NoSQL database allows us to distribute data throughout as many computers as 
+we want.
+
+
+Which one to choose
+In most cases, it will depend on the type of data that you are going to be storing. Pages such as Intagram, would be better to have a
+NoSQL database.
+
+
+Conclusion
+MySQL - More mature.
+	Table structure.
+	Requires a schema. (It tends to be a fixed planning of the database's structure.)
+	Great with relationships.
+	Vertically scalable.
+
+MongoDB - Shiny and new.
+	  Document structure.
+	  More flexible to changes.
+	  Not great with complex relationships.
+	  Horizontally scalable.
