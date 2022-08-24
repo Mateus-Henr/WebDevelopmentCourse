@@ -1,0 +1,42 @@
+Using MongoDB
+
+
+Reading all data from db
+  db.products.find()
+
+
+Specifying query
+  db.products.find(
+  {
+    name: "Pencil"
+  })
+
+
+Specifying query (using logical operators)
+  db.products.find(
+  {
+    price: {$gt: 1}
+  })
+
+
+Specifying query filter criteria (projection - used to specify which field we want back)
+db.products.find(
+  {
+    _id: 1
+  },
+  {
+    name: 1
+  })
+
+OBS: Whenever using the find command "id" comes back by default.
+
+
+Specifying query filter criteria (projection - hiding _id)
+  db.products.find(
+  {
+    _id: 1
+  },
+  {
+    name: 1
+    _id: 0
+  })
