@@ -1,0 +1,48 @@
+Using MongoDB
+OBS: Note that if something doesn't exist when executing a command, it will be
+     created.
+
+
+Starting the server
+  mongod
+
+
+Accessing Mongo Shell
+  mongosh
+
+
+Listing databases out
+  show dbs
+
+
+Creating databases
+  use shopDB
+
+
+Seeing what the current db
+  db
+
+
+Creating data (Always JS objects)
+  db.products.insertOne(
+    {
+      _id: 1,
+      name: "Pen",
+      price: 1.20
+    })
+
+
+Collections - Similar to tables (collection of decuments).
+
+
+Displaying collections
+  show collections
+
+
+Challege
+  db.products.insertOne(
+    {
+      _id: 2,
+      name: "Pencil",
+      price: 0.80
+    })
