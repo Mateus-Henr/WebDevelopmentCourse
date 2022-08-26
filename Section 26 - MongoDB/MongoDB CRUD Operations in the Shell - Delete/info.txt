@@ -1,0 +1,10 @@
+Deleting data from colection
+
+
+Challenge (deletign a single document)
+db.products.deleteOne(
+{
+  _id: 2
+})
+
+OBS: We pass in the filter to specify what we want to delete.
