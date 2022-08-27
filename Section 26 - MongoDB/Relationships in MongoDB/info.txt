@@ -1,0 +1,51 @@
+Types of relationships when using MongoDB
+
+Through an array (embedded document) - One to Many
+  db.products.insertOne(
+  {
+    _id: 3,
+    name: "Rubber",
+    price: 1.30,
+    stock: 43,
+    review: [
+    {
+      authorName: "Sally",
+      rating: 5,
+      review: "Best rubber ever!"
+    },
+    {
+      authorName: "John",
+      rating: 5,
+      review: "Awesome rubber!"
+    }
+    ]
+  })
+
+
+Challenge
+  db.products.insertOne(
+  {
+    _id: 2,
+    name: "Pencil",
+    price: 0.80,
+    stock: 12,
+    review: [
+    {
+      authorName: "Hector",
+      rating: 5,
+      review: "Could be better!"
+    },
+    {
+      authorName: "Kate",
+      rating: 5,
+      review: "Awesome pencil!"
+    }
+    ]
+  })
+
+
+Using the IDs - One to Many
+{
+  orderNumber: 3243,
+  productsOrdered: [1, 2]
+}
