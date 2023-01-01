@@ -1,0 +1,19 @@
+REST (REpresentational State Transfer)
+
+Make sure that you have the right language when making requests to a server (HTTP is an example of those languages).
+HTTPS stands for HTTP Secure, that essentially uses cryptography to hide the language as well as the message being sent.
+A server has API that contains resources that it can expose to its clients.
+
+What does it mean to make an app RESTful?
+REST is one architectural style for designing APIs (GraphQL is another example).
+
+Two main rules for a REST architecture
+-> Use HTTP Request Verbs -
+    GET (read)
+    POST (create)
+    PUT and PATCH (update, with the difference that PUT sends everything
+                   whereas PATCH sends the piece of data that needs to be updated),
+    DELETE)
+-> Use Specific Pattern of Routes/Endpoints URLs
+    This just means that you have to have an organized project where the operations above make sense in group and
+    individually.
