@@ -23,6 +23,7 @@ const articleSchema = new mongoose.Schema({
 
 const Article = mongoose.model("Article", articleSchema);
 
+
 app.route("/articles")
     .get((req, res) =>
     {
