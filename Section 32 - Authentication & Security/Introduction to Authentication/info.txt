@@ -1,0 +1,2 @@
+Authentication is important for associating pieces of data to specific users and
+access restriction.
