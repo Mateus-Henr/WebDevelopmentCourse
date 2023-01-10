@@ -43,16 +43,9 @@ app.post("/register", (req, res) =>
         password: req.body.password
     });
 
-    newUser.save((err) =>
-    {
-        if (err)
-        {
-            console.log(err);
-            return;
-        }
-
-        res.render("secrets");
-    });
+    newUser.save()
+        .then(() => res.render("secrets"))
+        .catch((err) => console.log(err));
 });
 
 
@@ -61,22 +54,21 @@ app.post("/login", (req, res) =>
     const username = req.body.username;
     const password = req.body.password;
 
-    User.findOne({email: username}, (err, foundUser) =>
-    {
-        if (err)
+    User.findOne({email: username})
+        .then((foundUser) =>
         {
-            console.log(err);
-            return;
-        }
-
-        if (foundUser)
-        {
-            if (foundUser.password === password)
+            if (foundUser)
             {
-                res.send("secrets");
+                if (foundUser.password === password)
+                {
+                    res.render("secrets");
+                    return;
+                }
             }
-        }
-    });
+
+            res.redirect("/login");
+        })
+        .catch((err) => console.log(err));
 });
 
 app.listen(3000, function ()
