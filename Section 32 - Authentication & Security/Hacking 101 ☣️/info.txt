@@ -1,0 +1,3 @@
+The same password always transforms in the same hash.
+By constructing a hashtable it would be "technically" possible to figure out the password.
+Password MUST be string, otherwise they can be discovered in a matter of seconds.
