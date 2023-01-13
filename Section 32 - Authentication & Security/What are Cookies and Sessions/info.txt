@@ -1,0 +1,9 @@
+Cookies
+They are used to save information about a session on a website.
+Notice that they are also used for advertisement. Once you have cookies of a product
+for example, other websites can throw some ads about that same item.
+Cookies are created as a result of a POST request.
+
+Session is a type of cookie which is a period of time that your browser interacts
+with the server. Log in is an example where cookies get saved in order to not ask
+again.
