@@ -1,0 +1,8 @@
+Why OAuth
+
+1. Granular Access Levels (Specify what you need from another website)
+2. Read/Read + Write Access (GET and POST operation on another website)
+3. Revoke Access
+
+Auth code (ticket) - Allows limited time info, login.
+Access token (pass) - Allows long time info, info from the website.
