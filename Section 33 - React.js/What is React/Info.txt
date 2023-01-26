@@ -1,0 +1,5 @@
+Why to use it?
+
+It's a front-end framework that allows you to create similar elements for repetitive data.
+Another advantage is that it only updates specific elements instead of updating the entire page.
+In other words, elements on a page updates themselves upon changes.
