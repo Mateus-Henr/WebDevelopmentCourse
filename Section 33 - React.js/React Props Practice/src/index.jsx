@@ -9,5 +9,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 //https://c6fkx.csb.app/
 //2. Extract the contact card as a reusable Entry component.
 //3. Use props to render the default Beyonce contact card
-//so the Entry component can be reused for other emojipedia.
-//4. Import the emojipedia.js file to create card components.
+//so the Entry component can be reused for other practice.
+//4. Import the practice.js file to create card components.
