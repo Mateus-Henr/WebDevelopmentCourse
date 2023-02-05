@@ -1,0 +1,38 @@
+Ledger - It's a record of who owns who and the amount.
+
+The ledger has to have trust and consensus in order to work as desired.
+So, to achieve such results, first the history has to be immutable, encryption is a way to "hide" your
+message, but this is easily breakable once depending on the key you can always get the message back.
+For that reason, blockchain's system uses hashing. Hashing is a math function that allows to convert
+a message to a hash code, with the advantage that to translate it back is almost impossible.
+
+Blockchain, as its name says, is structured through blocks, meaning that each block is what we hash.
+Taking into account the ledger metaphor, each record would be a record that is hashed.
+
+Nonce - It's a number is a number that is combined with the data to produce a hash code.
+
+What does a block need to be added to the blockchain?
+A requirement could be a starting number or value for example. The nonce is used for this objective,
+but it has to try possibilities until that value is found. The more the number of digits the longer
+it takes to found a nonce for that hash.
+
+Blockchain
+Blocks in a blockchain takes into account the hash of a previous block. So that's how it gets chained
+together. So in order for a block to be created it combines the data, the nonce and the previous
+block's hash. If you alter a block in the chain, the subsequent blocks will be invalid.
+
+Summing things up, if a block in the blockchain is changed, the "entire" blockchain is invalidated.
+
+Consensus (Distributed blockchain)
+Every time a new miner joins the blockchain they will get a copy of the entire blockchain.
+If the person alters the blockchain and redo the nonce to get valid, that person will have a "valid"
+blockchain, but that won't match with the other peers blockchains. This is how the network detects
+a change. So this distribution contributes to ensure integrity.
+
+Back to our metaphor we have a distributed trustless ledger.
+
+When Ethereum came out, it was discovered that we could store more than data inside blocks, so we
+started to store code into the blocks, which was called smart contracts.
+An example would be when making a crowdfunding and the goal is reached, a code in the blockchain
+gets activated and transfers the money to the recipient.
+What we will be learning is how to make automatic things upon an "event" that is stored in the blockchain.
