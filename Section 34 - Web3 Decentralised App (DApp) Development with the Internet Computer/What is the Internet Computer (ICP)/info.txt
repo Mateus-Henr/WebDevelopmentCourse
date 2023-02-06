@@ -1,0 +1,12 @@
+ICP - Internet Computer
+
+It looks for Blockchain Singularity which is a blockchain that allows to run the entire baseline of
+the internet.
+DApps right now only have small services in the blockchain, the major part is in third part services
+like Amazon AWS.
+Ethereum can only have 40 transactions per second, that's why we don't have fully-fledged apps
+running solely on blockchain. Scalability is not good at all.
+
+Canister smart chains - Can run processors and store data.
+There's an ICP with multiple canisters that can run programs. Canister is like a program running
+forever.

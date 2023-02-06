@@ -1,0 +1,23 @@
+Web3 way of creating business
+
+Build -> Release Tokens -> DAO (Decentralized Autonomous Organization)
+
+OBS: Instead of money we have tokens
+
+Filecoin - It's a decentralized storage that shares files across multiple devices
+that enforces redundancy and by consequence it's easier to retrieve files.
+
+DApp (Decentralized App) - Allows to gather more funding. Through these apps is
+possible to distribute tokens to the person that is using the app as well as the
+developer.
+
+Pseudonymity is another advantage of these apps as you only need a username, there's
+no need for personal information.
+
+To build an app you have to choose a chain, Ethereum is the most common one.
+However, one of the main problems of this token, is scalability and computation once you cannot
+store data in Ethereum due to its cost.
+NFTs are one example of this as their images are not stored in the Ethereum chain, only the URL.
+Amazon AWS is what is used the most for data.
+
+Internet computer - Scalable internet computer that runs on the blockchain.
