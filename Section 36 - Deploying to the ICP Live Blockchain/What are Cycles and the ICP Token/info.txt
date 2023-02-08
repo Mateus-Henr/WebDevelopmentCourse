@@ -1,0 +1,7 @@
+ICP Token (Internet Computer Token) - They're tradable tokens, one way to acquire them is by buying,
+but another way is through the Network Nervous System (NNS), which basically controls the ICP. To
+get tokens through it, it has a voting system that gives away tokens.
+A third way is Dfinity developer grant program. The last way is acting like a data center.
+
+Cycles - Tokens can be exchanged for computational cycles in your canisters. While there's cycles
+the program works.
