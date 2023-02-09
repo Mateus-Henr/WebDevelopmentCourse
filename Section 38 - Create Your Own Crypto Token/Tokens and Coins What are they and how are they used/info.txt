@@ -1,0 +1,10 @@
+Tokens vs. Coins
+
+Coins require their own blockchain.
+Tokens use an existing blockchain.
+
+Notice that to create a coin just copy an existing blockchain such as bitcoin, like DOGE did.
+However, after forking a blockchain it's necessary to have miners to mine your coin.
+When creating a token is interesting to have a well-known way to exchange your coin.
+Burning a token means destroying it or sending it to a wallet that cannot be accessed.
+Tokens can be used for equity (voting/shareholders). Also, can be used for some sort of functionality.
