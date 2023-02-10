@@ -1,0 +1,7 @@
+// Version: 1.0.0
+actor {
+  stable var balanceEntries : [(Principal, Nat)];
+  stable owner : Principal;
+  stable symbol : Text;
+  stable totalSupply : Nat
+};
