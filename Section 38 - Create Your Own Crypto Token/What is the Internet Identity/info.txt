@@ -5,4 +5,4 @@ Authentication on the Internet Identity
 In order to have an anonymous identity, there are two keys the private and the public.
 The public is stored in the blockchain, meanwhile the private is stored in the device
 that has the biometric authentication. Both keys are necessary to grant user access to
-the app.
+the app
